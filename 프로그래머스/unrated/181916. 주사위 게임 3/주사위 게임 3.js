@@ -11,7 +11,6 @@ function solution(a, b, c, d) {
         srted.push([i,result[i]]);
     }
     srted.sort((a,b)=>b[1] - a[1])
-    console.log(srted)
     if(srted.length == 1)
         return 1111 * parseInt(srted[0][0]);
     
