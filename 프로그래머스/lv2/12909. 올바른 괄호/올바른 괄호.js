@@ -5,7 +5,7 @@ function solution(s){
         s[i] === "(" ? cnt +=1 : cnt+= -1
         if(cnt<0){
             break;
-            //return false;
+            // return -1;
         }
     }
 
