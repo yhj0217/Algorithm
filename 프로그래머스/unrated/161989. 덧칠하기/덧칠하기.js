@@ -1,12 +1,14 @@
 function solution(n, m, section) {
     var answer = 0;
-    let painted = 0;
-    
-    section.forEach(el=>{
-        if(painted < el){
-            painted = el + m - 1;
-            answer++;
+    for(let i=0;i<section.length;i++){
+        for(let j=i+1;j<section.length;j++){
+            if(section[j]-section[i]>=m){
+                answer++;
+                i=j;
+            }
         }
-    })
+    }
+    //마지막 한개 더 더해주기
+    answer++;
     return answer;
 }
