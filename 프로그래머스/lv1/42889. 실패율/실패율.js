@@ -21,7 +21,6 @@ function solution(N, stages) {
         reached = 0;
     }
     rate.sort((a,b)=>{
-        if(a.value === b.value) return a.index - b.index
         return b.value - a.value
     })
     
