@@ -4,7 +4,6 @@ function solution(lottos, win_nums) {
     lottos.sort((a,b)=> a-b);
     win_nums.sort((a,b)=> a-b);
     lottos = lottos.filter(x => !win_nums.includes(x));
-    console.log(lottos)
     if(lottos.length === 0) return [1,1];    
     else{
         for(let i=0; i<lottos.length; i++){
