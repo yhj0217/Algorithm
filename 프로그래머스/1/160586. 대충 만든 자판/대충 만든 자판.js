@@ -23,7 +23,6 @@ function solution(keymap, targets) {
             x = -1;
         }
         return x
-    })
-    
+    })    
     return answer;
 }
