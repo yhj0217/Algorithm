@@ -4,7 +4,9 @@ function solution(code) {
 
     for (let i = 0; i < code.length; i += 1) {
       if (Number(code[i]) === 1) {
-          mode = mode === 1 ? 0 : 1
+          if(mode == 1)
+              mode = 0
+          else mode = 1;
       }
       if (Number(code[i]) !== 1 && i % 2 === mode) {
         ret += code[i];
