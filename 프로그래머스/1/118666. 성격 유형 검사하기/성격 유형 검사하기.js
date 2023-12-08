@@ -14,33 +14,25 @@ function solution(survey, choices) {
         }
     }
     
-    if(mbti["R"] > mbti["T"]){
-        answer += "R";
-    } else if(mbti["R"] < mbti["T"]){
+    if(mbti["R"] < mbti["T"]){
         answer += "T";
     } else {
         answer += "R";
     }
     
-    if(mbti["C"] > mbti["F"]){
-        answer += "C";
-    } else if(mbti["C"] < mbti["F"]){
+    if(mbti["C"] < mbti["F"]){
         answer += "F";
     } else {
         answer += "C";
     }
     
-    if(mbti["J"] > mbti["M"]){
-        answer += "J";
-    } else if(mbti["J"] < mbti["M"]){
+    if(mbti["J"] < mbti["M"]){
         answer += "M";
     } else {
         answer += "J";
     }
     
-    if(mbti["A"] > mbti["N"]){
-        answer += "A";
-    } else if(mbti["A"] < mbti["N"]){
+    if(mbti["A"] < mbti["N"]){
         answer += "N";
     } else {
         answer += "A";
