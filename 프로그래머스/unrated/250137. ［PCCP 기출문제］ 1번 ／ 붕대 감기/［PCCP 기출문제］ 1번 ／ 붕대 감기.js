@@ -9,7 +9,6 @@ function solution(bandage, health, attacks) {
             health -= attacks[idx][1];
             if(health <= 0){
                 return -1;
-                break;
             }            
         idx++;
         cnt = 1;
