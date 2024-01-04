@@ -8,8 +8,6 @@ function solution(want, number, discount) {
     }, {})
         for(let i=day; i<10+day; i++){
             if(basket.hasOwnProperty(discount[i]) && basket[discount[i]] > 0) basket[discount[i]] -= 1
-
-
         }
         if(Object.values(basket).every(val => val === 0)) {
             answer++
