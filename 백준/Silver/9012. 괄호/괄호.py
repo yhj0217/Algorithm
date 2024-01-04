@@ -14,7 +14,7 @@ for _ in range(test):
                 break
             else:
                 stack.pop()
-    if bool == True:
+    if bool:
         if len(stack) != 0:
             print("NO")
         else:
