@@ -18,9 +18,8 @@ def find(x):
 def union(x,y):
     x = find(x)
     y = find(y)
-    if x == y:
-        return
-    parent[x] = y
+    if x != y:
+        parent[y] = x
 
 cnt = 0
 answer = 0
