@@ -15,8 +15,6 @@ def solution(priorities, location):
         elif first == temp:
             answer += 1
             location -= 1
-            if deq:
-                first = max(deq)
             if location < 0:
                 break
             
